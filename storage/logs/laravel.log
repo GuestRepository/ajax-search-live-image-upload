@@ -1,0 +1,17 @@
+[2022-08-01 23:12:14] local.ERROR: Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\myproject\example-app\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:70
+Stack trace:
+#0 C:\xampp\htdocs\myproject\example-app\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(70): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\xampp\htdocs\myproject\example-app\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\xampp\htdocs\myproject\example-app\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\xampp\htdocs\myproject\example-app\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(184): Illuminate\Database {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+ in C:\\xampp\\htdocs\\myproject\\example-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70
+Stack trace:
+#0 C:\\xampp\\htdocs\\myproject\\example-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\xampp\\htdocs\\myproject\\example-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\xampp\\htdocs\\myproject\\example-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\xampp\\htdocs\\myproject\\example-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database at C:\\xampp\\htdocs\\myproject\\example-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:712)
+[stacktrace]
+#0 {main}
+"} 
